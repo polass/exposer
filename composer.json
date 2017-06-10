@@ -1,0 +1,36 @@
+{
+    "name": "polass/exposer",
+    "description": "Exposer exposes hidden properties and methods",
+    "type": "library",
+    "homepage": "https://github.com/polass/exposer",
+    "keywords": [ "hidden", "reflection" ],
+    "authors": [
+        {
+            "name": "abesuke"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7"
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "autoload": {
+        "files": [
+            "src\\Exposer\\helpers.php"
+        ],
+        "psr-4": {
+            "Polass\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Polass\\Tests\\": "tests/"
+        }
+    },
+	"minimum-stability": "dev",
+    "license": "MIT"
+}
